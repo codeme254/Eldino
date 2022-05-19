@@ -788,4 +788,8 @@ body {
   font-size: 2.5rem;
   color: red;
 }
+
+.toggle-class{
+  color: red;
+}
 /* end of the footer */
