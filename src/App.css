@@ -60,7 +60,7 @@ body {
   right: 0;
   z-index: 3000;
   background-color: var(--color-white);
-  background-color: var(--color-primary);
+  background-color: red;
 }
 
 .header__logo {
