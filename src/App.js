@@ -8,6 +8,7 @@ import Services from './Services/Services';
 import Goals from './Goals/Goals';
 import Testimonies from './Testimonies/Testimonies';
 import Opportunities from './Opportunities/Opportunities';
+import NewsAndUpdates from './News/News';
 import Footer from './Footer/Footer';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Goals />
       <Testimonies />
       <Opportunities />
+      <NewsAndUpdates />
       <Footer />
     </div>
   );
