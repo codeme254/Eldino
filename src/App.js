@@ -1,5 +1,6 @@
 import './App.css';
 
+import Nav from './Nav/Nav';
 import Hero from './Hero/Hero';
 import MiniExplanation from './MiniExplanations/MiniExplanation';
 import Cards from './CardsSection/Cards';
@@ -14,6 +15,7 @@ import Footer from './Footer/Footer';
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Hero />
       <MiniExplanation />
       <Cards />
