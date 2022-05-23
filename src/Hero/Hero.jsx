@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = () => {
+const Hero = ({handleClick}) => {
   return (
     <section className="hero">
       <div className="hero__textbox">
@@ -11,7 +11,7 @@ const Hero = () => {
           We make the world a better place to be by providing the best care to
           the elderly.
         </p>
-        <button className="hero__button">get in touch</button>
+        <button className="hero__button" onClick={handleClick}>Learn More</button>
       </div>
     </section>
   );
