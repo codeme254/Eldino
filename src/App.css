@@ -10,6 +10,27 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 56%;
+  }
+}
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -31,6 +52,13 @@ body {
   letter-spacing: 1.5;
   color: var(--color-black-default);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 2000px) {
+  body {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
 }
 
 .title {
@@ -318,7 +346,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   justify-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .card {
   width: 30rem;
@@ -512,7 +540,7 @@ body {
     align-items: center;
   }
 
-  .services__right{
+  .services__right {
     width: 100%;
     padding: 1rem;
   }
@@ -671,7 +699,7 @@ body {
   }
 
   .testimony {
-    width: 98vw;
+    width: 98%;
     margin: 3rem auto;
   }
 }
