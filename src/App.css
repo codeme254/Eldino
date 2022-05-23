@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --color-primary: #3c90f7;
   --color-black-default: #333;
@@ -47,6 +52,7 @@ body {
 .title__description {
   font-size: 1.8rem;
   color: #888;
+  text-align: center;
 }
 
 /* Navigation */
@@ -120,6 +126,48 @@ body {
   width: var(--size);
   height: var(--size);
   fill: #555;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+.header__button svg {
+  --size: 2.5rem;
+  width: var(--size);
+  height: var(--size);
+  fill: var(--color-primary);
+}
+
+@media screen and (max-width: 1000px) {
+  .header__button {
+    display: flex;
+  }
+
+  .header__nav {
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    background-color: var(--color-white);
+    padding: 1rem 4rem;
+    transform: translateX(150%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .header__nav--active {
+    transform: translateX(0) !important;
+  }
+
+  .header__list {
+    flex-direction: column;
+  }
 }
 /* End of Navigation */
 
@@ -240,6 +288,28 @@ body {
   justify-self: left;
   font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+  .miniexplanation__svg svg {
+    --size: 4rem;
+  }
+
+  .miniexplanation__heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .m-explanations__container {
+    flex-direction: column;
+  }
+
+  .m-explanations__container > *:not(:last-child) {
+    margin-right: 0 !important;
+    margin-bottom: 2rem;
+  }
+}
+
 /* end of miniexplanations section */
 
 /* cards section */
@@ -297,6 +367,14 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10rem 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  .success-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
 }
 
 .success__box {
@@ -401,6 +479,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .services__box-right__image {
@@ -412,6 +491,41 @@ body {
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .services__section {
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+
+  .services__section > * {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services__left--layout {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services__right{
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .services__left--image {
+    margin-bottom: 1.5rem;
+  }
+
+  .services__box-right {
+    width: 98%;
+    height: 35rem;
+    margin: auto;
+  }
 }
 /* end of services section */
 
@@ -549,6 +663,18 @@ body {
   font-style: oblique;
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 500px) {
+  .testimonies__container {
+    padding: 1rem;
+    padding-top: 15rem;
+  }
+
+  .testimony {
+    width: 98vw;
+    margin: 3rem auto;
+  }
+}
 /* End of the Testimonies section */
 
 /* opportunities section */
@@ -561,6 +687,18 @@ body {
 
 .opportunities__container > *:not(:last-child) {
   margin-right: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .opportunities__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opportunities__container > *:not(:last-child) {
+    margin-right: 0 !important;
+  }
 }
 
 .opportunity {
@@ -617,6 +755,22 @@ body {
   border-radius: 100px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+  .opportunity {
+    flex-direction: column;
+    width: 98vw;
+    margin: 2rem auto;
+  }
+
+  .opportunity > * {
+    min-width: 100%;
+  }
+
+  .opportunities__container {
+    padding: 1rem;
+  }
+}
 /* end of opportunities section */
 
 /* news and updates section */
@@ -644,8 +798,6 @@ body {
 
 .newscard__header {
   background-color: var(--color-white);
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212); */
-  /* box-shadow: 0px 4px 4px -2px rgba(51, 51, 51, 0.73); */
   margin-bottom: 2.5rem;
 }
 
@@ -789,7 +941,13 @@ body {
   color: red;
 }
 
-.toggle-class{
-  color: red;
+@media screen and (max-width: 600px) {
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__container > *:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
 /* end of the footer */

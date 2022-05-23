@@ -1,6 +1,7 @@
 {
-  "name": "project1",
+  "name": "eldino",
   "version": "0.1.0",
+  "description":"Landing page for a fictional company that takes care of the elderly",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
