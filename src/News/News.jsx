@@ -6,7 +6,7 @@ import img1 from "./../Assets/Images/two-old.jpg";
 
 const NewsAndUpdates = () => {
   return (
-    <section className="news_section">
+    <section className="news_section" id="news-and-updates">
       <Title
         mainTitle="news & updates"
         descriptionText="Lorem ipsum dolor sit, amet consectetur adipisicing elit."

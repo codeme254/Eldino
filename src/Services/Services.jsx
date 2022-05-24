@@ -3,7 +3,7 @@ import image1 from "../Assets/Images/elder-sports.jpg";
 
 const Services = () => {
   return (
-    <section className="services__section">
+    <section className="services__section" id="services">
       <div className="services__left">
         <h4 className="services__title">
           we provide the best care to the elders

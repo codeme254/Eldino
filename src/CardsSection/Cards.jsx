@@ -7,7 +7,7 @@ import img4 from './../Assets/Images/holding-hands.jpg';
 
 const Cards = () => {
   return (
-    <section className="cards-section">
+    <section className="cards-section" id="about">
       <Card image={img1} title="special care" subtitle="sea shells on the sea shore." />
       <Card image={img2} title="special relaxation" subtitle="sea shells on the sea shore." />
       <Card image={img3} title="special respect" subtitle="sea shells on the sea shore." />

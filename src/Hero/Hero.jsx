@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = ({handleClick}) => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero__textbox">
         <h1 className="hero__heading">
           expert care for the elderly

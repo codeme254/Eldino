@@ -7,7 +7,7 @@ import user3 from "./../Assets/Images/user-3.jpg";
 
 const Testimonies = () => {
   return (
-    <section className="testimonies__section">
+    <section className="testimonies__section" id="testimonies">
       <div className="testimonies__container">
         <Testimony
           image={user1}

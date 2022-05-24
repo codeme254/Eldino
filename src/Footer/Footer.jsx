@@ -15,16 +15,28 @@ const Footer = () => {
             placeat eius veniam!
           </p>
           <div className="footer__social-icons">
-            <a href="/" className="footer__social-icon--link">
+            <a
+              href="https://www.facebook.com/zaphenath.paneah.522"
+              className="footer__social-icon--link"
+            >
               <Facebook />
             </a>
-            <a href="/" className="footer__social-icon--link">
+            <a
+              href="https://github.com/codeme254"
+              className="footer__social-icon--link"
+            >
               <Instagram />
             </a>
-            <a href="/" className="footer__social-icon--link">
+            <a
+              href="https://twitter.com/Zaphenath254"
+              className="footer__social-icon--link"
+            >
               <Twitter />
             </a>
-            <a href="/" className="footer__social-icon--link">
+            <a
+              href="https://www.linkedin.com/in/otwoma/"
+              className="footer__social-icon--link"
+            >
               <LinkedIn />
             </a>
           </div>
@@ -121,7 +133,8 @@ const Footer = () => {
         </div>
       </div>
       <p className="footer__copyright">
-          Developed with <span className="footer__copyright--icon">&hearts;</span> by Dennis Otwoma. Fell free to use this project for anything.
+        Developed with <span className="footer__copyright--icon">&hearts;</span>{" "}
+        by Dennis Otwoma. Fell free to use this project for anything.
       </p>
     </footer>
   );
